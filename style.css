@@ -1,11 +1,13 @@
-.body {
-  background-color: gray;
+body,
+html {
+  background-color: #4d5157;
 }
 #countLabel {
   display: block;
   text-align: center;
   font-size: 10em;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Cascadia code";
+  color: cornsilk;
 }
 
 #btnContainer {
@@ -17,10 +19,40 @@
   font-size: 1.5em;
   color: white;
   background-color: hsl(219, 79%, 66%);
-  border-radius: 5px;
+  border: none;
+  border-radius: 7px;
   cursor: pointer;
-  transition: background-color 0.25s;
+  transition: background-color 0.5s;
 }
 .buttons:hover {
   background-color: hsl(219, 82%, 57%);
+}
+
+button[type="github"] {
+  padding: 5px 8px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #303030;
+  color: #fff;
+  clear: both;
+  font-family: "ubuntu";
+
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-width: 30%;
+}
+
+button[type="github"]:hover {
+  transition: background-color 0.9s ease;
+  background-color: #af4c9d;
 }
